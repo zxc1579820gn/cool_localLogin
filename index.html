@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#" />
+
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="style.css" />
+
+        <title>登陸及註冊畫面還有酷東東</title>
+<!--==============================================================酷東東設定======================================================================-->
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="description" content="A WebGL fluid simulation that works in mobile browsers.">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Webgl Fluid Simulation">
+        <meta property="og:description" content="A WebGL fluid simulation that works in mobile browsers.">
+        <meta property="og:url" content="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">
+<!--==============================================================酷東東設定======================================================================-->
+<!--==============================================================酷東東設定======================================================================-->
+        <style>
+            * {
+                user-select: none;
+            }
+    
+            html, body {
+                overflow: hidden;
+            }
+    
+            body {
+                margin: 0;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+            }
+    
+            canvas {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+    
+            .dg {
+                opacity: 0.9;
+            }
+    
+            .dg .property-name {
+                overflow: visible;
+            }
+    
+            .bigFont {
+                font-size: 150%;
+                color: #8C8C8C;
+            }
+    
+            .cr.function.appBigFont {
+                font-size: 150%;
+                line-height: 27px;
+                background-color: #2F4F4F;
+            }
+    
+            .cr.function.appBigFont .property-name {
+                float: none;
+            }
+    
+            .cr.function.appBigFont .icon {
+                position: sticky;
+                bottom: 27px;
+            }
+        </style>
+<!--==============================================================酷東東設定======================================================================-->
+    </head>
+    <body>
+
+    <canvas style="position: absolute; top: 0; left: 0; z-index: -1;"></canvas><!--酷東東-->
+    <!-- style="position: absolute; top: 0; left: 0; z-index: -1;" -->
+    <!-- style="pointer-events: none; -->
+    <!-- style="pointer-events: auto; -->
+
+        <div class="container" style="pointer-events: none;">
+            <div class="section">
+                <div class="container" >
+                    <div class="row full-height justify-content-center">
+                        <div class="col-12 text-center align-self-center py-5">
+                            <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                                <h6 class="mb-0 pb-3"><span>登陸 </span><span>註冊</span></h6>
+                                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                                <label for="reg-log"></label>
+                                <div class="card-3d-wrap mx-auto">
+                                    <div class="card-3d-wrapper">
+                                        <div class="card-front">
+                                            <div class="center-wrap">
+                                                <div class="section text-center">
+                                                    <h4 class="mb-4 pb-3">登陸</h4>
+                                                    <div class="form-group">
+                                                        <input type="text" name="logemail" class="form-style" placeholder="請輸入帳號" id="Account" autocomplete="off" />
+                                                        <i class="input-icon uil uil-at"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="password" name="logpass" class="form-style" placeholder="請輸入密碼" id="Password" autocomplete="off" />
+                                                        <i class="input-icon uil uil-eye-slash" id="password-icon" style="cursor: pointer;pointer-events: auto;"></i>
+                                                        
+                                                    </div>
+                                                    <a href="https://www.youtube.com/" class="btn mt-4" id="add">登陸</a>
+                                                    <p class="mb-0 mt-4 text-center"><a href="https://www.youtube.com/" class="link">忘記密碼?</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="center-wrap">
+                                                <div class="section text-center">
+                                                    <h4 class="mb-4 pb-3">註冊</h4>
+                                                    <div class="form-group">
+                                                        <input type="text" name="logname" class="form-style" placeholder="請輸入帳號" id="singupAccount" autocomplete="off" />
+                                                        <i class="input-icon uil uil-user"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="text" name="logemail" class="form-style" placeholder="請輸入密碼" id="singupPassword" autocomplete="off" />
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="text" name="logpass" class="form-style" placeholder="請重複輸入密碼" id="RepeatPassword" autocomplete="off" />
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                    <a href="#" class="btn mt-4" id="SignUpBtn">註冊</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="logo">
+                                <button id="re" style="width: 50px;height: 50px;pointer-events: auto;">re</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="./login.js"></script>
+<!--==============================================================酷東東設定======================================================================-->
+        <script src="./script.js"></script>
+<!--==============================================================酷東東設定======================================================================-->
+    </body>
+</html>
