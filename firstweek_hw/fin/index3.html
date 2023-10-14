@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>homework_page3</title>
+  <meta name="description" content="Free Bootstrap 4 Pingendo Aquamarine template for unique events.">
+  <meta name="keywords" content="Pingendo conference event aquamarine free template bootstrap 4">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="aquamarine.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="js/navbar-ontop.js"></script>
+  <!-- Script: Animated entrance -->
+  <script src="js/animate-in.js"></script>
+
+  
+</head>
+
+<body class="text-center" style="background-color: black;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#" style="color: #0dff00;">首頁</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#speakers"style="color: #0dff00;">熱門導遊</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#schedule"style="color: #0dff00;">今日推薦</a>
+          </li>
+        </ul>
+        <a class="btn navbar-btn mx-2  btn-outline-light" href="#register"style="color: #0dff00;">現在預約</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Cover -->
+  <div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url(&quot;assets/conference/cat.gif&quot;);"> <!-- cover.jpg -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-white mt-5">
+          <h1 class="display-2 d-none d-md-block">美好旅程 現在開始</h1>
+          <h1 class="display-4 d-block d-md-none">關於我們</h1>
+          <p class="" style="font-size: 24pt;">(如果他們不戳的話) </p>
+          <a href="#register" class="btn btn-lg mt-4 btn-outline-light">現在預約</a><i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Parallax section -->
+  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/conference/ds/gd.gif&quot;);"><!-- venue.jpg -->
+    <div class="container my-5 bg-light p-4">
+      <div class="row mx-auto">
+        <div class="col-md-12" id="play-music-text"o >
+          <h1 class="mb-3" style="color: #0dff00;"  >國動名言-關於閃現</h1>
+
+          <p class=""style="color: #0dff00;font-size: 18pt;" >-這什麼到底什麼閃現喔齁齁齁齁齁齁 -</p>
+
+          <a href="#schedule" class="btn btn-outline-primary btn-lg m-2">今日推薦</a>
+          <a class="btn btn-primary btn-lg m-2" href="#register">現在預約</a>
+
+
+          <audio id="my-audio-ti" src="music/國動這到底什麼閃現 _Audio Trimmer.mp3"></audio>
+          <script>
+            const playMusicText = document.getElementById("play-music-text");
+            const audio0 = document.getElementById("my-audio-ti");
+    
+            // 单击文本时播放音乐
+            playMusicText.addEventListener("click", function() {
+                audio0.play();
+            });
+          </script>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Speakers -->
+
+
+  <div class="py-5 bg-light" id="speakers" style="background-color: rgb(0, 0, 0);">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 style="color: #0dff00;" >知名導遊</h1>
+        </div>
+      </div>
+
+
+      <div class="row">
+
+        <div class="col-6 col-lg-4 animate-in-left">
+            <img id="play-music-image"src="picture/tcsh.png" class="center-block img-fluid my-3 rounded-circle" width="300" height="200"><!-- people_1.jpg -->
+            <h3 class="mb-0"><b style="color: #0dff00;">陳之漢</b></h3>
+            <p class="text-muted" style="color: #0dff00;font-size: 18pt;">館長</p>
+          <audio id="my-audio" src="music/要傳承我的精神_Audio Trimmer.mp3"></audio>
+          <script>
+              const playMusicImage = document.getElementById("play-music-image");
+              const audio = document.getElementById("my-audio");
+              // 单击图像时播放音乐
+              // playMusicImage.addEventListener("click", function() {
+              //     audio.play();
+              // });
+
+              let isAudioPlaying = false;
+              playMusicImage.addEventListener("click", function() {
+                  if (isAudioPlaying) {
+                  // 如果音乐正在播放，停止播放
+                      audio.currentTime = 0; // 将音频的当前时间设置为0，重新开始播放
+                      audio.pause();
+                  } else {
+                  // 如果音乐未播放，开始播放
+                      audio.play();
+                  }
+                  // 切换播放状态
+                  isAudioPlaying = !isAudioPlaying;
+              });
+
+
+
+
+          </script>
+        </div>
+
+        <div class="col-6 col-lg-4">
+            <img id="play-music-image2"src="picture/tgd.jpg" class="center-block img-fluid my-3 rounded-circle" width="300"><!-- people_2.jpg -->
+            <h3 class="mb-0"><b style="color: #0dff00;">張葦航</b></h3>
+            <p class="text-muted"style="color: #0dff00; font-size: 18pt;">鼻地大師國動</p>
+          <audio id="my-audio2" src="music/具槌瑞斯_Audio Trimmer.mp3"></audio>
+          <script>
+              const playMusicImage2 = document.getElementById("play-music-image2");
+              const audio2 = document.getElementById("my-audio2");
+              // playMusicImage2.addEventListener("click", function() {
+              //     audio2.play();
+              //   });
+
+              let isAudioPlaying2 = false;
+              playMusicImage2.addEventListener("click", function() {
+                  if (isAudioPlaying2) {
+                      audio2.currentTime = 0; 
+                      audio2.pause(); 
+                  } else {
+                      audio2.play();
+                  }
+                  isAudioPlaying2 = !isAudioPlaying2;
+              });
+          </script>
+        </div>
+
+        <div class="col-6 col-lg-4 animate-in-right">
+            <img src="picture/tstanley.jpg" id="play-music-image3"class="center-block img-fluid my-3 rounded-circle" width="300"><!-- people_3.jpg -->
+            <h3 class="mb-0"><b style="color: #0dff00;">王榮燦</b></h3>
+            <p class="text-muted"style="color: #0dff00;font-size: 18pt;">史丹利</p>
+            <audio id="my-audio3" src="music/史丹利激動回應_Audio Trimmer.mp3"></audio>
+            <script>
+                const playMusicImage3 = document.getElementById("play-music-image3");
+                const audio3 = document.getElementById("my-audio3");
+                // playMusicImage3.addEventListener("click", function() {
+                //     audio3.play();
+                // });
+
+              let isAudioPlaying3 = false;
+              playMusicImage3.addEventListener("click", function() {
+                if (isAudioPlaying3) {
+                    audio3.currentTime = 0; 
+                    audio3.pause();
+                } else {
+                    audio3.play();
+                }
+                isAudioPlaying3 = !isAudioPlaying3;
+              });
+
+
+            </script>
+        </div>
+
+        <div class="col-6 col-lg-4 animate-in-left">
+            <img src="picture/tts.jpg" id="play-music-image4"class="center-block img-fluid my-3 rounded-circle" width="300"><!-- people_4.jpg -->
+            <h3 class="mb-0"><b style="color: #0dff00;">張嘉航</b></h3>
+            <p class="text-muted"style="color: #0dff00; font-size: 18pt;">亞洲統神</p>
+            <audio id="my-audio4" src="music/統神端火鍋_Audio Trimmer.mp3"></audio>
+            <script>
+                const playMusicImage4 = document.getElementById("play-music-image4");
+                const audio4 = document.getElementById("my-audio4");
+                // playMusicImage4.addEventListener("click", function() {
+                //     audio4.play();
+                // });
+
+              let isAudioPlaying4 = false;
+              playMusicImage4.addEventListener("click", function() {
+                if (isAudioPlaying4) {
+                    audio4.currentTime = 0; 
+                    audio4.pause();
+                } else {
+                    audio4.play();
+                }
+                isAudioPlaying4 = !isAudioPlaying4;
+              });
+
+
+            </script>
+        </div>
+
+        <div class="col-6 col-lg-4">
+            <img src="picture/ttoyz.jpg" id="play-music-image5"class="center-block img-fluid my-3 rounded-circle" width="300"><!-- people_5.jpg -->
+            <h3 class="mb-0"><b style="color: #0dff00;">劉偉健</b></h3>
+            <p class="text-muted"style="color: #0dff00; font-size: 18pt;">Toyz</p>
+            <audio id="my-audio5" src="music/TOYZ 不要再哈啦_Audio Trimmer.mp3"></audio>
+            <script>
+                const playMusicImage5 = document.getElementById("play-music-image5");
+                const audio5 = document.getElementById("my-audio5");
+                // playMusicImage5.addEventListener("click", function() {
+                //     audio5.play();
+                // });
+              let isAudioPlaying5 = false;
+              playMusicImage5.addEventListener("click", function() {
+                  if (isAudioPlaying5) {
+                      audio5.currentTime = 0; 
+                      audio5.pause();
+                  } else {
+                      audio5.play();
+                  }
+                  isAudioPlaying5 = !isAudioPlaying5;
+              });
+
+            </script>
+
+
+        </div>
+
+        <div class="col-6 mask col-lg-4 animate-in-right">
+            <img src="picture/twcm.jpg" id="play-music-image6"class="center-block img-fluid my-3 rounded-circle" width="300"><!-- people_6.jpg -->
+            <h3 class="mb-0"><b style="color: #0dff00;">王希銘</b></h3>
+            <p class="text-muted"style="color: #0dff00; font-size: 18pt;">散戶中的霸主</p>
+            <audio id="my-audio6" src="music/騎force女朋友約嗎？_Audio Trimmer.mp3"></audio>
+            <script>
+                const playMusicImage6 = document.getElementById("play-music-image6");
+                const audio6 = document.getElementById("my-audio6");
+                // playMusicImage6.addEventListener("click", function() {
+                //     audio6.play();
+                // });
+
+              let isAudioPlaying6 = false;
+              playMusicImage6.addEventListener("click", function() {
+                if (isAudioPlaying6) {
+                    audio6.currentTime = 0; 
+                    audio6.pause();
+                } else {
+                    audio6.play();
+                }
+                isAudioPlaying6 = !isAudioPlaying6;
+              });
+
+
+            </script>
+
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Schedule -->
+  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/conference/ds/國動.gif&quot;);" id="schedule">
+
+   
+  <div class="row">
+    <div class="col-md-12">
+      <h1 style="color: #0dff00;">今日推薦 -國動</h1>
+      
+    </div>
+  </div>
+  
+  <div class="carousel slide" id="carousel-266350" >
+    <ol class="carousel-indicators">
+      <li data-slide-to="0" data-target="#carousel-266350" class="active">
+      </li>
+      <li data-slide-to="1" data-target="#carousel-266350">
+      </li>
+      <li data-slide-to="2" data-target="#carousel-266350">
+      </li>
+
+      </li>
+      <li data-slide-to="3" data-target="#carousel-266350">
+      </li>
+      </li>
+      <li data-slide-to="4" data-target="#carousel-266350">
+      </li>
+
+
+    </ol>
+    <div class="carousel-inner" style="background-color: rgb();">
+      <div class="carousel-item active">
+        <img class="d-block w-100" alt="Carousel Bootstrap First" src="picture/g1.jpg" height="800px" width="20px"id="play-music-image7">
+        <audio id="my-audio7" src="music/為奢麼不幫我發大決_Audio Trimmer.mp3"></audio>
+        <script>
+            const playMusicImage7 = document.getElementById("play-music-image7");
+            const audio7 = document.getElementById("my-audio7");
+            // playMusicImage2.addEventListener("click", function() {
+            //     audio2.play();
+            //   });
+            let isAudioPlaying7 = false;
+            playMusicImage7.addEventListener("click", function() {
+                if (isAudioPlaying7) {
+                    audio7.currentTime = 0; 
+                    audio7.pause(); 
+                } else {
+                    audio7.play();
+                }
+                isAudioPlaying7 = !isAudioPlaying7;
+            });
+        </script>
+        <div class="carousel-caption"></div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" alt="Carousel Bootstrap Second" src="picture/g2.jpg"height="800px" width="20px"id="play-music-image8">
+        <audio id="my-audio8" src="music/拉進垃圾車_Audio Trimmer.mp3"></audio>
+        <script>
+            const playMusicImage8 = document.getElementById("play-music-image8");
+            const audio8 = document.getElementById("my-audio8");
+            // playMusicImage2.addEventListener("click", function() {
+            //     audio2.play();
+            //   });
+            let isAudioPlaying8 = false;
+            playMusicImage8.addEventListener("click", function() {
+                if (isAudioPlaying8) {
+                    audio8.currentTime = 0; 
+                    audio8.pause(); 
+                } else {
+                    audio8.play();
+                }
+                isAudioPlaying8 = !isAudioPlaying8;
+            });
+        </script>
+        <div class="carousel-caption"></div>
+      </div>
+
+
+      <div class="carousel-item">
+        <img class="d-block w-100" alt="Carousel Bootstrap Third" src="picture/g3.jpg"height="800px" width="20px"id="play-music-image9">
+        <audio id="my-audio9" src="music/牙宿開滑_Audio Trimmer.mp3"></audio>
+        <script>
+            const playMusicImage9 = document.getElementById("play-music-image9");
+            const audio9 = document.getElementById("my-audio9");
+            // playMusicImage2.addEventListener("click", function() {
+            //     audio2.play();
+            //   });
+            let isAudioPlaying9 = false;
+            playMusicImage9.addEventListener("click", function() {
+                if (isAudioPlaying9) {
+                    audio9.currentTime = 0; 
+                    audio9.pause(); 
+                } else {
+                    audio9.play();
+                }
+                isAudioPlaying9 = !isAudioPlaying9;
+            });
+        </script>     
+        <div class="carousel-caption"></div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" alt="Carousel Bootstrap 4" src="picture/gg1.gif"height="800px" width="20px"id="play-music-image10">
+        <audio id="my-audio10" src="music/看到我達瑞斯不會怕的ㄟ_Audio Trimmer.mp3"></audio>
+        <script>
+            const playMusicImage10 = document.getElementById("play-music-image10");
+            const audio10 = document.getElementById("my-audio10");
+            // playMusicImage2.addEventListener("click", function() {
+            //     audio2.play();
+            //   });
+            let isAudioPlaying10 = false;
+            playMusicImage10.addEventListener("click", function() {
+                if (isAudioPlaying10) {
+                    audio10.currentTime = 0; 
+                    audio10.pause(); 
+                } else {
+                    audio10.play();
+                }
+                isAudioPlaying10 = !isAudioPlaying10;
+            });
+        </script>     
+
+
+        <div class="carousel-caption"></div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" alt="Carousel Bootstrap 5" src="picture/gg2.jpg"height="800px" width="20px"id="play-music-image11">
+        <audio id="my-audio11" src="music/報報呢_Audio Trimmer.mp3"></audio>
+        <script>
+            const playMusicImage11 = document.getElementById("play-music-image11");
+            const audio11 = document.getElementById("my-audio11");
+            // playMusicImage2.addEventListener("click", function() {
+            //     audio2.play();
+            //   });
+            let isAudioPlaying11 = false;
+            playMusicImage11.addEventListener("click", function() {
+                if (isAudioPlaying11) {
+                    audio11.currentTime = 0; 
+                    audio11.pause(); 
+                } else {
+                    audio11.play();
+                }
+                isAudioPlaying11 = !isAudioPlaying11;
+            });
+        </script>
+        <div class="carousel-caption"></div>
+      </div>
+
+
+
+
+
+
+    </div> <a class="carousel-control-prev" href="#carousel-266350" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-266350" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+  </div>
+</div>
+
+  
+<!-- 
+
+  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/conference/ds/國動.gif&quot;);" id="schedule">
+    <div class="container section-aquamarine">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-white mt-4">Schedule</h1>
+        </div>
+      </div>
+      <div class="row text-left text-dark">
+        <div class="p-4 col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-block text-center card-primary p-2">
+              <h2>Day 1</h2>
+              <p class="lead">Prototype</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;09:30-10:00 –&nbsp;<b>Welcome</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;10:00-12:00 –&nbsp;<b>Bootstrap</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;12:00-13:00 –&nbsp;<b>Q&amp;A</b></li>
+              <li class="list-group-item bg-info"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;13:00-14:30 –&nbsp;<b>Lunch</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;14:30-16:00 –&nbsp;<b>Besties</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;16:00-18:00 –&nbsp;<b>Workshop</b></li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-4 col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-block text-center card-primary p-2">
+              <h2>Day 2</h2>
+              <p class="lead">Design</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;09:30-10:00 –&nbsp;<b>Guests</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;10:00-12:00 –&nbsp;<b>Design</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;12:00-13:00 –&nbsp;<b>UI trends</b></li>
+              <li class="list-group-item bg-info"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;13:00-14:30 –&nbsp;<b>Lunch</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;14:30-16:00 –&nbsp;<b>Discussion</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;16:00-18:00 –&nbsp;<b>Party!</b></li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-4 col-lg-4">
+          <div class="card text-dark">
+            <div class="card-block text-center p-2">
+              <h2>Day 3</h2>
+              <p class="lead">Publish</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;09:30-10:00 –&nbsp;<b>WBN</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;10:00-12:00 –&nbsp;<b>Publishing</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;12:00-13:00 –&nbsp;<b>Implement</b></li>
+              <li class="list-group-item bg-info"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;13:00-14:30 –&nbsp;<b>Lunch</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;14:30-16:00 –&nbsp;<b>Farewell</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;16:00-18:00 –&nbsp;<b>Party!</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+
+
+  <!-- Sponsor logos -->
+  <div class="py-5 section bg-faded " style="background-color: white;" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="mb-4"style="color: #00000;">甘爹們</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <img class="center-block img-fluid d-block" src="assets/conference/logo_1.png"> </div>
+        <div class="col-md-3 col-6">
+          <img class="center-block img-fluid d-block" src="assets/conference/logo_4.png"> </div>
+        <div class="col-md-3 col-6">
+          <img class="center-block img-fluid d-block" src="assets/conference/logo_3.png"> </div>
+        <div class="col-md-3 col-6">
+          <img class="center-block img-fluid d-block" src="assets/conference/logo_2.png"> </div>
+      </div>
+    </div>
+  </div>
+  <!-- Call to action -->
+  <div class="py-5 section-aquamarine" id="register">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-md-left text-center">
+          <h1 class="text-white">預約開放中</h1>
+          <p>預先報名即可優先參與活動。 價前將於稍後公佈。&nbsp; <br>現在預約就有機會參加獨家一對一見面活動。</p>
+        </div>
+        <div class="col-md-4 align-self-center animate-in-right">
+          <a href="#" class="btn btn-lg btn-light my-3">現在預約</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-md-left text-center p-4 bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="my-3 col-lg-4 col-md-6">
+          <h3>關於我們</h3>
+          <p class="text-muted"></p>
+          <p class="my-3">
+            <a href="https://maps.app.goo.gl/YRuFXf1Et8JfgPyj8" target="blank" class="text-muted">地址:桃園市中壢區 <br>龍川二街134號1樓</a>
+          </p>
+          <a class="btn btn-lg btn-primary" href="#">回到頂部</a>
+        </div>
+        <div class="my-3 col-lg-4 col-md-6">
+          <h3>聯絡我們</h3>
+          <form>
+            <fieldset class="form-group my-3">
+              <input type="email" class="form-control" id="Input Email" placeholder="Email"> </fieldset>
+            <fieldset class="form-group my-3">
+              <input type="message" class="form-control" id="Input Message" placeholder="Message"> </fieldset>
+            <button type="submit" class="btn btn-outline-primary">送出</button>
+          </form>
+        </div>
+        <div class="col-lg-1"> </div>
+        <div class="my-3 col-lg-3">
+          <h3>追蹤我們</h3>
+
+          <a href="https://www.facebook.com/ICAICVT"><i class="fa fa-facebook-square text-muted fa-3x m-2"></i></a>
+          <a href="https://www.instagram.com/tutech1964/"><i class="fa fa-3x fa-instagram text-muted m-2"></i></a>
+          <a href="https://twitter.com"><i class="fa fa-3x fa-twitter m-2 text-muted"></i></a>
+          <a href="https://plus.google.com"><i class="fa fa-3x fa-google-plus-official text-muted m-2"></i></a>
+          <a href="https://pinterest.com"><i class="fa fa-3x text-muted fa-pinterest-p m-2"></i></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><i class="fa fa-3x text-muted fa-youtube-play m-2"></i></a>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-muted">uwu</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Script: Smooth scrolling between anchors in the same page -->
+  <script src="js/smooth-scroll.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>

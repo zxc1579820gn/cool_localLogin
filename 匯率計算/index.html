@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/匯率計算/style.css">
+</head>
+<body  >
+  
+    <h1>匯率計算</h1>
+    <p>選擇匯率單位獲取匯率</p>
+
+    <div class="container">
+      <div class="currency">
+        <select id="currency-one">
+          <option value="AED">阿聯酋迪拉姆AED</option>
+          <option value="ARS">阿根廷比索ARS</option>
+          <option value="AUD">澳元AUD</option>
+          <option value="BGN">保加利亞列弗BGN</option>
+          <option value="BRL">巴西雷亞爾BRL</option>
+          <option value="BSD">白俄羅斯盧布BYR</option>
+          <option value="CNY">人民幣CNY</option>
+          <option value="DKK">丹麥克朗DKK</option>
+          <option value="EGP">埃及鎊EGP</option>
+          <option value="EUR">歐元EUR</option>
+          <option value="FJD">斐濟美元FJD</option>
+          <option value="GBP">英鎊GBP</option>
+          <option value="GTQ">瓜地馬拉格查兒GTQ</option>
+          <option value="HKD">港幣HKD</option>
+          <option value="HRK">克羅埃西亞庫納HRK</option>
+          <option value="HUF">匈牙利福林HUF</option>
+          <option value="IDR">印尼盾IDR</option>
+          <option value="ILS">以色列新錫克爾ILS</option>
+          <option value="INR">印度盧比INR</option>
+          <option value="ISK">冰島克朗ISK</option>
+          <option value="JPY">日圓JPY</option>
+          <option value="KRW">韓元KRW</option>
+          <option value="KZT">哈薩克堅強戈KZT</option>
+          <option value="MXN">墨西哥比索MXN</option>
+          <option value="MYR">馬來西亞林吉特MYR</option>
+          <option value="NOK">挪威克朗NOK</option>
+          <option value="NZD">紐元NZD</option>
+          <option value="PAB">巴拿馬巴波亞PAB</option>
+          <option value="PEN">秘魯索爾PEN</option>
+          <option value="PHP">菲律賓比索PHP</option>
+          <option value="PKR">巴基斯坦盧比PKR</option>
+          <option value="PLN">波蘭茲羅提PLN</option>
+          <option value="PYG">巴拉圭瓜拉尼PYG</option>
+          <option value="RON">羅馬尼亞新列伊RON</option>
+          <option value="RUB">盧布RUB</option>
+          <option value="SAR">沙烏地阿拉伯人裡亞爾SAR</option>
+          <option value="SEK">瑞典克朗SEK</option>
+          <option value="SGD">新加坡元SGD</option>
+          <option value="THB">泰銖THB</option>
+          <option value="TRY">新土耳其里拉TRY</option>
+          <option value="TWD" selected>新台幣TWD</option>
+          <option value="UAH">烏克蘭格里夫納UAH</option>
+          <option value="USD">美元USD</option>
+          <option value="UYU">烏拉圭比索UYU</option>
+          <option value="VND">越南盾VND</option>
+          <option value="ZAR">南非蘭特ZAR</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+      </div>
+
+      <div class="swap-rate-container">
+        <button class="btn" id="swap">
+          交换
+        </button>
+        <div class="rate" id="rate"></div>
+      </div>
+
+      <div class="currency">
+        <select id="currency-two">
+          <option value="AED">阿聯酋迪拉姆AED</option>
+          <option value="ARS">阿根廷比索ARS</option>
+          <option value="AUD">澳元AUD</option>
+          <option value="BGN">保加利亞列弗BGN</option>
+          <option value="BRL">巴西雷亞爾BRL</option>
+          <option value="BSD">白俄羅斯盧布BYR</option>
+          <option value="CNY">人民幣CNY</option>
+          <option value="DKK">丹麥克朗DKK</option>
+          <option value="EGP">埃及鎊EGP</option>
+          <option value="EUR">歐元EUR</option>
+          <option value="FJD">斐濟美元FJD</option>
+          <option value="GBP">英鎊GBP</option>
+          <option value="GTQ">瓜地馬拉格查兒GTQ</option>
+          <option value="HKD">港幣HKD</option>
+          <option value="HRK">克羅埃西亞庫納HRK</option>
+          <option value="HUF">匈牙利福林HUF</option>
+          <option value="IDR">印尼盾IDR</option>
+          <option value="ILS">以色列新錫克爾ILS</option>
+          <option value="INR">印度盧比INR</option>
+          <option value="ISK">冰島克朗ISK</option>
+          <option value="JPY" selected>日圓JPY</option>
+          <option value="KRW">韓元KRW</option>
+          <option value="KZT">哈薩克堅強戈KZT</option>
+          <option value="MXN">墨西哥比索MXN</option>
+          <option value="MYR">馬來西亞林吉特MYR</option>
+          <option value="NOK">挪威克朗NOK</option>
+          <option value="NZD">紐元NZD</option>
+          <option value="PAB">巴拿馬巴波亞PAB</option>
+          <option value="PEN">秘魯索爾PEN</option>
+          <option value="PHP">菲律賓比索PHP</option>
+          <option value="PKR">巴基斯坦盧比PKR</option>
+          <option value="PLN">波蘭茲羅提PLN</option>
+          <option value="PYG">巴拉圭瓜拉尼PYG</option>
+          <option value="RON">羅馬尼亞新列伊RON</option>
+          <option value="RUB">盧布RUB</option>
+          <option value="SAR">沙烏地阿拉伯人裡亞爾SAR</option>
+          <option value="SEK">瑞典克朗SEK</option>
+          <option value="SGD">新加坡元SGD</option>
+          <option value="THB">泰銖THB</option>
+          <option value="TRY">新土耳其里拉TRY</option>
+          <option value="TWD">新台幣TWD</option>
+          <option value="UAH">烏克蘭格里夫納UAH</option>
+          <option value="USD">美元USD</option>
+          <option value="UYU">烏拉圭比索UYU</option>
+          <option value="VND">越南盾VND</option>
+          <option value="ZAR">南非蘭特ZAR</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./intro.js"></script>
+</body>
+
+</html>

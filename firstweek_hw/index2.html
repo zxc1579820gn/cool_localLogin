@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homewor_page2</title>
+    <link rel="stylesheet" href="index2/index2.css">   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body style="background-color: black;">
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron " style="background-image: url(picture/OB3dUbG.gif); background-repeat: no-repeat;background-size: 100% 100%;">
+                    <h2 style="font-weight: bold;color: black;
+                    color:  #0dff00;
+                    
+                    background-color: black; 
+                    width: 30%;
+                    ">
+                        精選頂級導遊，您的專屬旅程。
+                    </h2>
+                    <p style="font-size: 15pt;">
+                        <span style="font-weight: bold;background-color: black;color:  #0dff00; ">從眾多導遊中選出屬於自己的隊友，體會史詩級的精彩表現。</span>
+                    </p>
+                    <p style="font-weight: bold; -webkit-text-stroke: 0.5px rgba(0, 176, 23, 0.868);">
+                        <a class="btn btn-primary btn-large" href="fin/index3.html">了解更多</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center text-primary">
+                    熱門旅遊景點
+                </h3>
+            </div>
+        </div>
+        <div class="row" style="display: flex;justify-content: center;">
+            <div class="col-md-4"style="justify-content: center;">
+                <img alt="Bootstrap 影像預覽" src="picture/1.jpg" height="200px" width="350px" style="margin-top: 4px;">
+                <h2 style="color: #0dff00;">
+                    <span style="font-size: 25pt;">召喚峽谷</span>
+                </h2>
+                <p style=" width: 350PX; color: #0dff00;">
+                    這裡生存著巨大的青蛙，雙頭狼，有角的兔子和蝴蝶。這個地方也吸引了龍。而巴龍.納什也再度出現，這是一條巨大的蛇形生物，很多人認為它已經死了幾個世紀，它污染著周圍的土地。
+                </p>
+                <p>
+                    <a class="btn" href="#">了解更多 »</a>
+                </p>
+            </div>
+            <div class="col-md-4" >
+                <img alt="Bootstrap 影像預覽" src="picture/2.jpg"height="200px" width="300px">
+                <h2 style="color: #0dff00;">
+                    <span style="font-size: 25pt;">咆嘯深淵</span>
+                </h2>
+                <p style=" width: 350PX;color: #0dff00;">
+                    <span>咆嘯深淵是個位於弗雷爾卓德最冷、最殘酷地區的無底裂隙。據說很久很久以前，在這跨越深淵的窄橋上，有一場偉大的戰鬥，沒有人記得是誰為了什麼原因，在此戰鬥。</span>
+                </p>
+                <p>
+                    <a class="btn" href="#">了解更多 »</a>
+                </p>
+            </div>
+            <div class="col-md-4" >
+                <img alt="Bootstrap 影像預覽" src="picture/3.jpg"  height="200px" width="300px">
+                
+                <h1 style="color: #0dff00;">
+                    <span style="font-size: 25pt;">競技場&nbsp;</span>
+                </h1>
+                <p style=" width: 350PX;color: #0dff00;">
+                    <span>一個雙人四組混戰遊戲模式，雙人玩家隊伍將在不同地圖（擂台）對上其他隊伍，使敵隊的生命歸零，撐到最後的隊伍即可獲勝！<br>&nbsp;&nbsp </span>
+                </p>
+                <p >
+                    <a class="btn" href="#">了解更多 »</a>
+                </p>
+            </div>
+        </div>
+
+
+                <hr class="chr" style="  margin-top: 1rem;
+                margin-bottom: 1rem;
+                border: 0;
+                border-top: 1px solid rgb(32, 218, 15);">
+
+
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <div class="col-md-12">
+                    <h1 class="text-center text-primary" style="color: #0dff00;">
+                        <span style="font-size: 25pt;text-align: center;color: #0dff00;"id="title">讓牙宿滑起來!!!!&nbsp;</span>
+                    </h1>
+                </div>
+
+
+                <button type="button" class="btn btn-success active btn-block"id="disappear-button" class="my-button" style="height: 600px; background-image:url(picture/hasaki.jpg) ;background-repeat: no-repeat; background-size: 100% 100%;">
+
+                </button>
+                    
+                        <source src="music/League of Legends BGM.mp3" type="audio/mp3">
+                        
+                        <audio id="my-audio" src="music/HASAKI !_Audio Trimmer.mp3" ></audio>
+                        <img id="replacement-image" src="picture/hasaki_die2.jpg" alt="替换图像" style="display: none; max-width: 100%;">
+    <script>
+        // 获取按钮元素和替换图像元素
+        const button = document.getElementById("disappear-button");
+        const replacementImage = document.getElementById("replacement-image");
+        const audio = document.getElementById("my-audio");
+        const title = document.getElementById("title");
+
+        // 添加点击事件监听器
+        button.addEventListener("click", function() {
+
+            const newAudio = new Audio(audio.src);
+            
+            // 播放音乐副本
+            newAudio.play();
+
+            audio.play();
+            // 生成一个随机数，例如0到1之间的随机数
+            const randomValue = Math.random();
+            
+
+            // 定义消失概率，例如50%
+            const disappearanceProbability = 0.08;
+            // 如果随机数小于消失概率，隐藏按钮并显示替换图像
+            if (randomValue < disappearanceProbability) {
+                button.style.display = "none";
+                replacementImage.style.display = "block";
+                title.textContent = "牙宿滑不起來了 都是隊友害的";
+            }
+        });
+        
+    </script>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    
+        <!-- <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

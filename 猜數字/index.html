@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body style="background-color: grey;">
+
+    <div style=" height: 600px; width: 100%;position: relative; ">
+
+        <div id="bass" style=" background-color: rgb(255, 255, 255); height: 100%; width: 50%;position: absolute;left: 25%;border-radius: 10px; margin-top: 5%;">
+
+            
+            <div  style=" height: 10%; width: 100%;display: flex;align-items: center;">
+                <div style="width: 45%; height: 100%;">
+
+                <button class="btnans" id="conrebtn" style="height: 80%;width: 50%;border-radius: 10px;">
+                    <p style="font-size: 14pt;">重新開始<p>
+                </button>
+
+                </div>
+
+                <div style="width: 60%; height: 100%;">
+
+                <h1 id="title" >猜數字</h1>
+
+                </div>
+
+            </div>
+            <div   style="height: 30%; width: 100%;display: flex;justify-content: space-around;align-items: center;">
+                <div style="height: 100%; width: 30%;display: flex;justify-content: center;align-items: center;">
+                    <h1 id="con1" style="font-size: 80pt;">x</h1>
+                </div>
+                <div style="height: 100%; width: 30%;display: flex;justify-content: center;align-items: center;">
+                    <h1 id="con2" style="font-size: 80pt;">-</h1>
+                </div>
+                <div style="height: 100%; width: 30%;display: flex;justify-content: center;align-items: center;">
+                    <h1 id="con3" style="font-size: 80pt;overflow: hidden;white-space:nowrap;">y</h1>
+                </div>
+
+            </div>
+
+            <div style="height: 30%; width: 100%;display: flex;justify-content: space-around;align-items: center;">
+                <div>
+                    <input class="inputxt" id="inputxt" type="number" step="1" value="1" min="x" max="y" style="height: 50px;width: 500px;border-radius: 10px;font-size: 18pt;" oninput="value=value.replace(/[^\d]/g,'')">
+                </div>
+
+            </div>
+
+            <div style=" height: 30%; width: 100%;display: flex;justify-content: space-around;align-items: center;">
+                <div>
+                    <button class="btnans" id="btnans" style="height: 100px;width: 300px;border-radius: 10px;">
+                        <p style="font-size: 14pt;">回答<p>
+                    </button>
+
+                    <button class="btnans" id="rebtn" style="height: 100px;width: 300px;border-radius: 10px;display: none;">
+                        <p style="font-size: 14pt;">再來一次<p>
+                    </button>
+                </div>
+            </div>
+
+
+
+    
+
+
+
+        </div>
+
+
+    </div>
+    
+
+
+
+    <script src="./intro.js"></script>
+
+</body>
+
+</html>

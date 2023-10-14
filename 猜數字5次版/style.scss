@@ -1,0 +1,73 @@
+@import"./node_modules/bootstrap/scss/functions";
+
+@import"./stylesheet/helper/variables";
+
+@import"./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import"./stylesheet/pages/home";
+
+.btnans:active{
+    background-color: #047e7e;
+}
+.btnans:hover{
+    background-color: #047e7e;
+}
+.btnans{
+    color: #ffffff;
+    background-color: #04abab;
+}
+
+
+.ac{
+    border:1px solid #000000;
+
+            &:hover{
+                background-color: #047e7e;
+                transition: 1s;
+            }
+}
+
+.back{
+    border:1px solid #000000;
+}
+.division{
+    border:1px solid #000000;
+}
+.nana{
+    border:1px solid #000000;
+}
+.eight{
+    border:1px solid #000000;
+}
+.nine{
+    border:1px solid #000000;
+}
+.cross{
+    border:1px solid #000000;
+}
+
+
+.four{    border:1px solid #000000;
+}
+.five{    border:1px solid #000000;
+}
+.six{    border:1px solid #000000;
+}
+.subtr{    border:1px solid #000000;
+}
+
+.one{    border:1px solid #000000;
+}
+.two{    border:1px solid #000000;
+}
+.three{    border:1px solid #000000;
+}
+.add{    border:1px solid #000000;
+}
+
+.zero{border:1px solid #000000;
+}
+.dot{border:1px solid #000000;
+}
+.eqr{border:1px solid #000000;
+}

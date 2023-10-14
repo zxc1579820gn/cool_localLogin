@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>homework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="js/index.js">
+
+
+    <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+    <link rel="stylesheet" href="aquamarine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+
+
+
+    <!-- <audio src="/music/竜が我が敵を喰らう！.mp3" loop="loop" controls="auto" autoplay="autoplay" preload="auto"></audio> -->
+    <style>
+      body {
+          background-image: url('picture/NEWB\ 1.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          opacity: 0.85; /* 降低不透明度以淡化背景图片 */
+      }
+  </style>
+
+
+</head>
+<body >
+    <!--Bootstrap & fontawesome -->
+    <!-- <a href="/music.html"></a> -->
+    <!-- <p>点击页面的任何部分开始播放音乐</p> -->
+
+    
+
+    <audio id="myAudio"  loop="loop"  >
+        <source src="music/League of Legends BGM.mp3" type="audio/mp3">
+        
+    </audio>
+
+    <!-- <script>
+        var audio = document.getElementById('myAudio');
+        var documentBody = document.body;
+        // 添加事件监听器，监测页面点击事件
+        documentBody.addEventListener('click', function() {
+            // 在用户点击页面后触发音乐自动播放
+            audio.play();
+        });
+    </script> -->
+    <script>
+      var audio = document.getElementById('myAudio');
+      var documentBody = document.body;
+      var isPlaying = false;
+      const ignoreDiv = document.getElementById('ignoreDiv');
+
+      // documentBody.addEventListener('click', function() {
+      //     if (!isPlaying) {
+      //         audio.play();
+      //         isPlaying = true;
+      //     }
+      // });
+
+      // audio.addEventListener('ended', function() {
+      //     isPlaying = false;
+      // });
+
+      let isAudioPlaying = false;
+
+// 单击图像时切换音乐播放状态
+documentBody.addEventListener("click", function() {
+    if (isAudioPlaying) {
+        // 如果音乐正在播放，停止播放
+        audio.pause();
+
+
+
+
+    } else {
+        // 如果音乐未播放，开始播放
+        audio.play();
+
+    }
+    // 切换播放状态
+    isAudioPlaying = !isAudioPlaying;
+  });
+
+
+
+
+
+  </script>
+    
+
+
+      
+
+    
+    <div class="name">
+        <h2>峽谷旅行社登錄系統</h2>
+      </div>
+      
+      <div class="login_page" >
+        <div id="container1" >
+  
+          <div class="login">  
+            
+            <h3>登入 Login</h3>
+  
+            
+              <input type="text" id="username" name="username1" placeholder="帳號" required>
+
+              <input type="text" id="password" name="password1" placeholder="密碼" required>
+
+              <input type="submit" value="登入" class="submit" onclick="location.href='index2.html'"><!-- fin/index3.html-->
+            
+  
+            <h5 >註冊帳號</h5>
+            
+          </div><!-- login end-->
+        </div><!-- container1 end-->
+      </div><!-- login_page end-->
+      
+      <div class="signup_page">
+        <div id="container2">
+  
+          <div class="signup">  
+            
+            <h3>註冊 Sign Up</h3>
+  
+            
+              <input type="text" id="fullname" name="fullname" placeholder="使用者全名" required>
+              <div class="tab"></div>
+              <input type="text" id="username2" name="username" placeholder="帳號" required>
+              <div class="tab"></div>
+              <input type="text" id="password2" name="password" placeholder="密碼" required>
+              <div class="tab"></div>
+              <input type="text" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" required>
+              <div class="tab"></div>            
+              <input type="submit" value="註冊" class="submit">
+            
+  
+            <!-- <h5 onclick="show_hide()">登入帳號</h5> -->
+            
+          </div><!-- signup end-->
+        </div> <!-- container2 end-->
+      </div><!-- signup_page end--> 
+  
+      <div id="copyright">
+        <hr>
+        <marquee scrollamount="55" behavior=alternate bgcolor="black" ><b><font color="15ff3c"><font size="6">請打開聲音ヽ(●´∀`●)ﾉd(`･∀･)b(ﾉ>ω<)ﾉ請打開聲音</font></font>   </b>                                      </marquee><br>
+        <hr> 
+
+        <hr>
+        <marquee scrollamount="15" onMouseOver="this.stop()" bgcolor="black" onMouseOut="this.start()" >
+
+          <a href="https://www.facebook.com/ICAICVT"><i class="fa fa-facebook-square text-muted fa-3x m-2"></i></a>
+          <a href="https://www.instagram.com/tutech1964/"><i class="fa fa-3x fa-instagram text-muted m-2"></i></a>
+          <a href="https://twitter.com"><i class="fa fa-3x fa-twitter m-2 text-muted"></i></a>
+          <a href="https://plus.google.com"><i class="fa fa-3x fa-google-plus-official text-muted m-2"></i></a>
+          <a href="https://pinterest.com"><i class="fa fa-3x text-muted fa-pinterest-p m-2"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa fa-3x text-muted fa-youtube-play m-2"></i></a>
+
+        </marquee>
+        <hr> 
+        
+        
+        
+        <h4>UwU</h4>
+      </div>    
+
+      <!--
+      <div class="footer">
+        
+        <a href="https://www.facebook.com"><i class="fa fa-facebook-square text-muted fa-3x m-2"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-3x fa-instagram text-muted m-2"></i></a>
+        <a href="https://twitter.com"><i class="fa fa-3x fa-twitter m-2 text-muted"></i></a>
+        <a href="https://plus.google.com"><i class="fa fa-3x fa-google-plus-official text-muted m-2"></i></a>
+        <a href="https://pinterest.com"><i class="fa fa-3x text-muted fa-pinterest-p m-2"></i></a>
+        <a href="https://www.youtube.com"><i class="fa fa-3x text-muted fa-youtube-play m-2"></i></a>
+      </div> 
+      -->
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
