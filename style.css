@@ -84,7 +84,7 @@ h6 span {
     height: 36px;
     border-radius: 50%;
     color: #ffeba7;
-    background-color: #279EFF;
+    background-color: rgb(53, 184, 53);
     font-family: 'unicons';
     content: '\eb4f';
     z-index: 20;
@@ -296,13 +296,13 @@ h6 span {
 
 .btn:active,
 .btn:focus {
-    background-color: #279EFF;
+    background-color: rgb(53, 184, 53);
     color: #ffeba7;
     box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
 }
 
 .btn:hover {
-    background-color: #279EFF;
+    background-color: rgb(53, 184, 53);
     color: #ffeba7;
     box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
 }
