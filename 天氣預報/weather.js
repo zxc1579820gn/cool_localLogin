@@ -1,6 +1,6 @@
 let wet=[];
 const selectloc = document.getElementById('selectloc');
-fetch("https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWA-D843B008-810B-42F2-AE7B-5943A6DFF424")
+fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWA-D843B008-810B-42F2-AE7B-5943A6DFF424")
 // .then(function(response){
 //     return response.json();
 // })
